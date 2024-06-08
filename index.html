@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A manifesto for responsive design</title>
     <style>
+        :root {
+            --light: #e5e8e4;
+            --bright: #14a514;
+            --dark: #152217;
+        }
+
         html {
             scroll-snap-type: y mandatory;
         }
@@ -15,33 +21,147 @@
             margin: 0;
             border: 0;
             outline: 0;
+            font-family: 'IBM Plex Sans';
         }
 
         section {
             height: 100vh;
             width: 100%;
             scroll-snap-align: start;
+            display: flex;
+        }
+
+        section aside,
+        section article {
+            margin: 20px;
+        }
+
+        @media (orientation: landscape) {
+            section {
+
+                flex-direction: row;
+            }
+
+            section aside,
+            section article {
+                width: 50%;
+            }
+        }
+
+        @media (orientation: portrait) {
+            section {
+
+                flex-direction: column;
+            }
+
+            section aside,
+            section article {
+                height: 50%;
+            }
+        }
+
+
+
+
+        section.light {
+            background-color: var(--light);
+        }
+
+        section.bright {
+            background-color: var(--bright);
+        }
+
+        section.dark {
+            background-color: var(--dark)
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+        }
+
+        article p {
+            max-width: 50%;
+        }
+
+        aside img {
+            mix-blend-mode: multiply;
+        }
+
+        aside img.tall {
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            width: auto;
+        }
+
+        aside img.wide {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            height: auto;
+        }
+
+        aside:has(img.left) {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        aside:has(img.right) {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        aside:has(img.top) {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        aside:has(img.bottom) {
+            flex-direction: column;
+            justify-content: flex-end;
         }
     </style>
 </head>
 
 <body>
-    <section>
-        <h1>A manifesto for responsive identity design</h1>
-        <p>By Bradley Sansom</p>
-    </section>
-    <section>
-        <p>1</p>
-    </section>
-    <section>
-        <p>2</p>
-    </section>
-    <script>
+    <main>
+        <section class="bright" id="start">
+            <aside></aside>
+            <article>
+                <h1>A manifesto for responsive identity design</h1>
+                <p>By Bradley Sansom</p>
+            </article>
 
-    </script>
-    <section>
-        <p>3</p>
-    </section>
+        </section>
+        <section class="light" id="foreword">
+            <aside></aside>
+            <article>
+                <p>This project originated in my Design Futures unit. I began to think about what led me to being here: what brought me to the world of graphic design. What even is ‘graphic design’? And why do I have a degree in it? I spent a while pondering those questions, and started to figure out my design origin story.</p>
+            </article>
+        </section>
+        <section class="light">
+
+            <aside>
+                <img class="tall left" src="disny.jpg" alt="Me as a child wearing my school uniform. I am stood outside a building holding a large piece of paper. On there I have drawn a train, and written the words DISNY LAND EXPRES below.">
+            </aside>
+            <article>
+                <p>Because I was never really comfortable with ‘art’. Even when I was a kid, when we’d get the paints out at school, I’d be the one sat in the corner designing a system of wayfinding signs. Always a designer, never an artist. On one occasion, I’d bedecked the classroom like it was a small branch of Asda, complete with ample ‘no smoking’ signs.</p>
+            </article>
+        </section>
+
+        <section class="light">
+            <aside><img src="smoking.jpg" alt="A photocopied image of a handheld whiteboard, upon which I had placed some magnetic letters in a number of colours. They read NO SMOKING." class="wide top"></aside>
+            <aside></aside>
+        </section>
+    </main>
 </body>
 
 </html>
