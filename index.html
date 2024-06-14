@@ -37,6 +37,8 @@
         }
 
         @media (orientation: landscape) {
+
+
             section {
 
                 flex-direction: row;
@@ -49,6 +51,8 @@
         }
 
         @media (orientation: portrait) {
+
+
             section {
 
                 flex-direction: column;
@@ -89,6 +93,8 @@
 
         article p {
             max-width: 50%;
+            text-wrap: pretty;
+            line-height: 1.15;
         }
 
         aside img {
@@ -128,6 +134,79 @@
             flex-direction: column;
             justify-content: flex-end;
         }
+
+        .bright h1 {
+            color: var(--light);
+            font-size: 2.5rem;
+        }
+
+        .bright p {
+            color: var(--light);
+            font-size: 1.5rem;
+        }
+
+        .light aside ol {
+            color: var(--bright);
+            font-size: 3.5rem;
+            padding-inline: 100px;
+            list-style-type: decimal-leading-zero;
+            font-weight: bold;
+        }
+
+        .dark h2 {
+            color: var(--light);
+            font-size: 3.5rem;
+        }
+
+        .dark h2 span {
+            display: block;
+        }
+
+        .light blockquote {
+            color: var(--bright);
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .light blockquote footer {
+            font-size: 1rem;
+            color: grey;
+        }
+
+        aside:has(footer) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        aside footer {
+            color: grey;
+        }
+
+        .goal {
+            color: var(--bright);
+            font-size: 2.5rem;
+            font-weight: bold;
+            max-width: 80%;
+            line-height: 1;
+        }
+
+        .goal:before {
+            content: "→ ";
+        }
+
+        section.bright.bibliography {
+            height: fit-content;
+        }
+
+        section.bright.bibliography .article {
+            width: 100%;
+        }
+
+        #bibtext {
+            max-width: 100%;
+            font-size: 1rem;
+        }
     </style>
 </head>
 
@@ -159,8 +238,511 @@
 
         <section class="light">
             <aside><img src="smoking.jpg" alt="A photocopied image of a handheld whiteboard, upon which I had placed some magnetic letters in a number of colours. They read NO SMOKING." class="wide top"></aside>
-            <aside></aside>
+            <aside>
+                <img src="z8g2ea.jpg" alt="A scanned image of a drawing by me as a child. It reads CUSTMER SIVISES, an attempt to make a sign for customer services." class="wide bottom">
+            </aside>
         </section>
+        <section class="light">
+            <aside><img src="202401051211.jpg" alt="A scanned collection of childhood drawings, including the word KIOSK, a badge reading LOTARY BINGO SMOKING KILLS GAMBOLING, and a rocket." class="wide bottom"></aside>
+            <aside><img src="202401051217.jpg" alt="A scanned collection of childhood drawings, including wayfinding signs for steps and ramp." class="wide top"></aside>
+        </section>
+        <section class="light">
+            <aside><img src="me.jpg" alt="A photograph of me, aged around 6, sat on a chair facing a computer screen and wearing headphones." class="wide top"></aside>
+            <article>
+                <p>
+                    I wasn’t any good at drawing, so really being creative on the computer became my outlet. Initially this was on PowerPoint. It was a time when WordArt was all the rage and I hadn’t yet discovered minimalism. Eventually I left Microsoft Office behind, and began creating things using code. I made my first webpage about a decade ago now. It was only editing some horrid template, but I became amazed by this hidden world where I could write some code and it transform into images, colours, and formatted text.
+                </p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <img src="buttons.png" alt="Some old style buttons from the early web" class="wide top">
+                <footer><cite>Image: Web Design Museum</cite></footer>
+            </aside>
+            <article>
+                <p>
+                    And over the following ten years, I’ve gradually become accustomed to working that way. I sort of think in CSS, even when I’m creating something that isn’t web based. Whether designing for print, screen, or web, I’m instinctively bound by what I know to be possible in the world of web. This has advantages as well as drawbacks; but overall, it’s led to me having a rather different perspective on graphic design to most other practitioners.
+                </p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <ol>
+                    <li>Methodical</li>
+                    <li>Adaptable</li>
+                    <li>Accessible</li>
+                    <li>Functional</li>
+                    <li>Practical</li>
+                </ol>
+                <footer>The five principles of my manifesto for responsive identity design.</footer>
+            </aside>
+            <article>
+                <p>
+                    Over the same time, the web has transformed. Gone are the days when you’d design a webpage that fit exactly on an 800x600 pixel screen and proudly display a badge proclaiming the site looked best on Netscape Navigator. Nowadays it’s all about ‘responsive design’. You design something that looks good and functions on all manner of screen sizes and orientations.
+                </p>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p>
+                    When designing for the modern web, a responsive approach is universally recognised as being best practice. Other design disciplines, however, haven’t yet undergone such a shift. And I think that’s a shame. I’ve drawn up a manifesto for responsive design. It focuses on five different paradigms that are second nature to web designers, and distills them to their most basic forms that can be applied to any design endeavour. In this book, I will apply these principles in particular to brand identity design, though they are equally applicable to any specialism that would benefit.
+                </p>
+            </article>
+        </section>
+        <section class="dark" id="methodical">
+            <aside></aside>
+            <article>
+                <h2><span class="number">01</span>Methodical</h2>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p>
+                    The first point of my manifesto is about the process behind every design decision. I design best when there are restrictions, requirements, things that are in my way. If I’ve got free rein, that’s not design, that’s art. In web design, there very much is a correct route; there are very few ways of achieving the same thing, particularly when it comes to styling. And when that’s applied to brand design, a similarly systems-based approach is the most obvious route to investigate.
+                </p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <blockquote>
+                    <p>
+                        “I think all designers, especially identity designers, are thinking responsively - right from the start you’re thinking in concepts. You have to think beyond the digital device, because you’re going to have huge walls or tiny little things that you have to design. But this kind of thinking is something that is relatively new”
+                    </p>
+                    <footer>Martin Lorenz, <cite>interviewed Dec 2023 by Bradley Sansom</cite></footer>
+
+                </blockquote>
+            </aside>
+            <article>
+                <p>‘Responsiveness’ as a concept is second nature to web designers, and something that brand designers do consider too. But few theorists are yet exploring the intersection of the two, which is what I’ve been investigating in this project. Often that means taking a systems-based approach, of the type perhaps best described by Martin Lorenz. In his book Flexible Visual Systems, he set out his proposal for a shift in the way designers think about identity design. A process-driven design system, with clear steps for producing any sort of application, is the way forward.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <img src="fvs.png" alt="Scanned book page. Stop fixating on logos." class="wide top">
+                <footer><cite>Lorenz, M. and Slanted (2021) Flexible visual systems: the design manual for contemporary visual identities. 1st edition. Karlsruhe, Germany: Slanted Publishers.</cite></footer>
+            </aside>
+            <article>
+                <p>At its heart, a systems-based approach reduces everything to inputs and outputs. You have the content and the design, you push that through the design system, and out pops the design solution. But it’d be wrong to suggest that such a reductive analogy represents the realities of identity design completely. There will always be edge cases. However, a system ought to be able to account for that - design it right, and it will.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p class="goal">Any design should have an obvious route to take in creation and extension as part of a system, as it will be guided by requirements, restrictions, and principles first and foremost.</p>
+            </article>
+        </section>
+        <section class="dark" id="adaptable">
+            <aside></aside>
+            <article>
+                <h2><span class="number">02</span>Adaptable</h2>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p>The second tenet – adaptability – is about the ability of a design to work across different mediums. The reasoning behind a design should be consistent regardless of format or size, therefore the changes needed to adapt a design will be minimal. In responsive web design, pages are built ‘mobile first’ – you build it for the smallest screen first, and then iterations are made which alter the positioning of particular elements as the available space grows, adapting the design to suit but nevertheless retaining the same DNA. And in brand design, this is even more important – from the outset, identities need to be designed with the understanding that they’ll exist on everything from an app icon to an articulated lorry. And ‘just slap the logo on’ isn’t good enough.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <img src="parl.png" alt="UK Parliament logos" class="wide top">
+                <footer><cite>UK Parliament logos, SomeOne in London, 2018</cite></footer>
+            </aside>
+            <article>
+                <p>There was a trend a few years back for brands to have a ‘responsive logo’; that being one that has different ‘optical sizes’ with different levels of detail depending on space available. The illusion is meant to be that the logo appears the same but has a level of detail that adapts for the space available. In 2018, the agency SomeOne did the rebrand of the UK Parliament. They produced a lovely detailed version of the portcullis symbol, and then created versions which stripped out levels of detailing so that a more performant version of the logo could be used depending on how much space was available.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <img src="br.png" alt="British Rail logo" class="tall left">
+                <footer><cite>British Rail Corporate Identity Manual, Design Research Unit, 1985</cite></footer>
+            </aside>
+            <article>
+                <p>This isn’t a new development – in type design, there’s the concept of ‘optical size’, where different versions are made of a font with varying levels of detail. Nor is it new to brand design either – even in the lovely old British Rail identity from the 1960s, there were two versions of the double arrows, which were used either in ‘positive’ or ‘negative’ depending on whether it was light on dark or dark on light.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <img src="bury.png" alt="Two road signs pointing left, one with bolder type than the other" class="tall left">
+                <footer><cite>Recreation of two road signs using the Transport Medium (top) and Transport Heavy (bottom) typefaces.</cite></footer>
+            </aside>
+            <article>
+                <p>The idea was that you wouldn’t notice – the two symbols would appear the same, counteracting the visual effect that makes dark-on-light appear thinner than light-on-dark. The identity’s designers, the Design Research Unit, made a similar decision when drawing the Transport typeface used on British road signs. The weight used on white signs is bolder than the weight used on green signs, perversely to avoid people thinking it’s lighter.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="da.png" alt="Screenshots of tweets" class="wide top">
+                <footer><cite>Examples of incorrect versions of the British Rail symbol being used, as collected by the Twitter account @_doublearrow</cite></footer>
+            </aside>
+            <article>
+                <p>But the downside of there being different versions of the logos that are deliberately imperceptible is that even the designers tasked with implementing the identity can’t tell the difference. There are countless of examples of where the wrong version of the logo has been used, at which point it really becomes obvious that the bars are either too thin or too thick for the context. But only once you’ve seen them side-by-side.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="rs2.png" alt="Extract from Rail Symbol brand guidelines" class="wide top">
+                <footer><cite>Rail Symbol 2 Design Manual, by Network Rail, 2022</cite></footer>
+            </aside>
+            <article>
+                <p>In 2022, the designer Nick Job was commissioned by the Department for Transport to redraw the iconic symbol. And after seeing all the ways in which the original double arrows logo has been misused, he decided to produce just one version, midway between the positive and negative versions. In an interview with blog Beauty of Transport, he said “In reality, one never sees the two versions next to each other anyway, and having a single version rather than positive and negative versions makes it considerably more practical for designers who no longer have to worry about which version to use.”</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="cdm.png" alt="Casa de Musica logo" class="wide top">
+                <footer><cite>Casa de Musica identity, by Sagmeister & Walsh, 2007</cite></footer>
+            </aside>
+            <article>
+                <p>Adaptive logos, like those previous examples, are one way of making a brand marque responsive. The alternative is to eschew any impression of having just one logo, and instead going with what’s been termed a dynamic logo. Of course, now that most things are digital, you can animate things. There’s not as much of a need to have everything totally consistent across every output. The pioneers of this sort of thing were the agency Moving Brands. But others have done similar things of course, like the famous logo for Casa de Musica in Porto by Sagmeister & Walsh – they didn’t build ‘a logo’, they built the software that makes the logo – taking the colours from an image and generating logomarks from a range of geometric impressions of the angular building.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="van.png" alt="Woman giving a talk about architecture" class="wide top">
+                <footer><cite>Photo of Ellen van Loon delivering her talk with the Royal Institute of British Architects at Factory International, by Bradley Sansom, November 2023</cite></footer>
+            </aside>
+            <article>
+                <p>Ellen van Loon was the architect of both Casa de Musica and Manchester’s new Factory International. At a talk at the latter venue in 2023, she talked about her references, like Factory Records and Granada, which matched North and Peter Saville’s references when they were doing the brand identity. The architecture and the brand identity were intertwined from the beginning, before the building even existed. Both she and Saville appeared on a BBC documentary in late 2023, in which they reiterated how important the context of the site was to both of their creative processes. ‘Design’ as an aim is cross-disciplinary, not about everyone working in their own little boxes - those who wish to box people in as specifically ‘brand’ designers ought to recognise that no identity exists in a vacuum.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <blockquote>
+                    <p>
+                        “Most brands remained fixated on yesterday’s problem – consistent reproduction across media. But today a brand must be alive to change, just like the people it wants to connect with and the business it is a part of.”
+
+                    </p>
+                    <footer>Mat Heinl, CEO of Moving Brands, <cite>in Yates, D. and Price, J. (2015) Communication design: insights from the creative industries. London, UK: Fairchild Books.</cite></footer>
+
+                </blockquote>
+            </aside>
+            <article>
+                <p>That’s a similarly forward-thinking approach to that taken by Moving Brands. Their CEO, Mat Heinl believes that “consistent reproduction across media” in the modern world is an outdated consideration. The design of a brand must be adaptable, not replicable, to work across all output.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p class="goal">Any design should be flexible enough to work across print, web, motion, and physical, requiring few changes to the essence of a layout regardless of the size and format of the medium.</p>
+            </article>
+        </section>
+        <section class="dark" id="accessible">
+            <aside></aside>
+            <article>
+                <h2><span class="number">03</span>Accessible</h2>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p>The next area of my design philosophy is about accessibility. It’s not only about the obvious – large print, high contrast, that sort of thing. It’s about embodying equality in everything that I create. It’s avoiding making something that’s elitist, or exclusionary. Accessibility is a big thing on the web, generally it’s about making a design work for users with a range of needs, like visually impaired people who use a screen reader. And in branding, there’s even more to consider, not only digitally but in print, service design, experiences - everything.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="gds.png" alt="Examples of simple designs using the GDS system." class="wide top">
+                <footer><cite>GOV.UK Design System, 2013</cite></footer>
+            </aside>
+            <article>
+                <p>Naturally, government visual identities are often the ones which pay the most attention to accessibility, due to their large user bases and universal public service obligations. The UK’s Government Digital Service maintain a design system with a keen focus on usability and accessibility. They continually put so much effort and research into producing something that works for the people that use it.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <blockquote>
+                    <p>
+                        “All public services are legally required to be accessible. Also, because of structural inequality and discrimination, users with access needs are frequently over-represented among those who depend on public services.”
+
+
+                    </p>
+                    <footer>Mark Hurrell, Government Digital Service</footer>
+
+                </blockquote>
+            </aside>
+            <article>
+                <p>Like how the Universal Credit homepage has been designed to have no images or graphics, because research found that users of that webpage are more likely to be using an older phone or have a limited data plan. That’s accessibility to me; all things that need to be considered when you’re designing in the service of the public. This can, however, leave a design system feeling rather bland and clinical, which is a criticism that’s been levelled at the work of GDS.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="nsw.png" alt="New South Wales government identity system" class="wide top">
+                <footer><cite>NSW Government identity, by For The People, 2022</cite></footer>
+            </aside>
+            <article>
+                <p>Other governments haven’t gone with such a restrained approach for their design system – the agency For the People produced this for the government of New South Wales. It’s a lot more colourful for starters – it’s still a flexible system, using these distinctive bands of colour. Nevertheless, they’ve done a lot of testing into the colour combinations, they’ve found which ones work, in print and in digital, and which ones were most accessible.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="andy.png" alt="Illegible lecture slide" class="wide top">
+                <footer><cite>Lecture slide, by Andy Ellison, December 2023
+                        and Snippet from WebAIM checker showing colour contrast tests</cite></footer>
+            </aside>
+            <article>
+                <p>Because colour combinations are something that you can assess statistically. With apologies to Andy, whose lectures are always fantastic, I’m going to use his slides from one housekeeping lecture as an example of what not to do. This colour combination – don’t get me wrong, it’s lovely. But from where I was sat, watching from ten metres away on a flickering projector, it was physically painful to read the words. The edges were strobing and no-one could make out the words. And it’s not just me saying that – there are quantitative ways of measuring this – the Web Content Accessibility Guidelines set out minimum contrast ratios for text and background colours on screens, I’ve run these slides through their online checker and I’m sorry to say, they’ve failed on all five counts.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="poster.png" alt="Accessible design poster" class="tall left">
+                <footer><cite>Accessible design best practice poster, by Mark Hurrell for Government Digital Service, 2018</cite></footer>
+            </aside>
+            <article>
+                <p>The Government Digital Service measure stuff the same way – recently, they’ve spoken about how they’re adapting GOV.UK to fit with new accessibility guidance. It’s not just the basic things like font sizes and colours, it’s about thinking about the thoughts and moods of users, to help them have an easier time thanks to your design decisions. There’s a renewed push to think about cognitive load when designing services, which is as much a part of a brand identity as the logos and fonts are.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <blockquote>
+                    <p>
+                        “Making something highly accessible does not mean that you have to sacrifice on aesthetic quality. From my own experience and reading, I have built up an understanding of ‘advisable things to do’ and ‘less advisable things to do.’ This ranges from legibility issues to white space use, to overall information amount, to technical issues, to colour contrast.”
+
+
+                    </p>
+                    <footer>Thomas Bohm <cite>in Heller, S. and Vienne, V. (eds.) (2018) Citizen designer : perspectives on design responsibility. Second edition. New York: Allworth Press.</cite></footer>
+
+                </blockquote>
+            </aside>
+            <article>
+                <p>There’s a perception that making something accessible involves sacrificing on any sort of design flair in favour of a very functional, dull layout with huge print and basic fonts and colours. But that doesn’t have to be the case at all. Accessibility is about compromise. You’re never going to be able to make something that works for absolutely everyone. What’s good for one group of people could have adverse effects for another. But the aim should be to always keep these competing forces in mind when producing something, and trying to satisfy as many as possible.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p class="goal">Accessibility is about trade-offs. But it’s not inevitable that aesthetics and accessibility should be in conflict with one another. It’s about balancing different needs and trying to find an optimum solution that is as inclusive as possible.</p>
+            </article>
+        </section>
+        <section class="dark" id="functional">
+            <aside></aside>
+            <article>
+                <h2><span class="number">04</span>Functional</h2>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p>The fourth strand of my manifesto – functionality – is about how a branding system is actually implemented. When designing for the web, it’s best practice to develop the content of a site separately from the styling, such that both can be updated without affecting the other, so much so that they’re written in physically different languages, HTML vs CSS. And that split is something that I think applies to branding projects too. Not completely ‘form follows function’ in a brutalist sense, but not far off either. In branding, there naturally need to be functional rules about things like ‘where the logo goes’ and how big it is, what colours are used et cetera. Traditionally, that was done through a very strict, big document of brand guides, with hundreds of rules in it.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="nord.png" alt="Nordstrom Rack logo system" class="wide top">
+                <footer><cite>Nordstrom Rack branding, by JKR, 2023</cite></footer>
+            </aside>
+            <article>
+                <p>The problem with that, in a digital age, is that those boundaries, of rigid sizes of things, don’t exist anymore. While in the past you’d typically make a static website for a specific screen resolution, nowadays you design something that adapts to fit the screen whether it’s a smartwatch, a mobile, a tablet, a laptop, a monitor, a projector, whatever. And that means that having a strict rule, “the logo has to be 20mm high” and suchlike, doesn’t work. This is one way – deliberately having a flexible system that understands from the start that it will end up being adapted. The branding system for American clothing retailer Nordstrom Rack, created by Jones Knowles Ritchie, has been designed with the recognition that what works on a shop fascia isn’t good for an app icon.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="mmu.png" alt="MMU logo system" class="wide top">
+                <footer><cite>Manchester Metropolitan University
+                        brand guidelines, 2023</cite></footer>
+            </aside>
+            <article>
+                <p>On the flipside, a bad example would be the university. Their guidelines might be on a flashy website rather than a stuffy ringbinder, but that doesn’t change the fact that the rules within are really quite inflexible and ill-conceived. They’re specific about the sizes on paper – to a degree. But for screens - the rules just say “40 pixels minimum” . And forty pixels on a smartwatch versus forty pixels on a cinema screen is a huge difference. And that’s before you get to rules for things like merchandise, and wayfinding. It feels like it really hasn’t been considered as a proper branding system, and as a result, there’s no buy-in from designers, and so it gets ignored.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="bbc.png" alt="BBC branding" class="wide top">
+                <footer><cite>Various outputs of the BBC brand, by Wolff Ollins and BBC Creative, 2021-24</cite></footer>
+            </aside>
+            <article>
+                <p>These sorts of things need to be considered from the start when an identity system is being developed. The BBC have done that quite well, they altered their logo a couple of years back, they brought in the agency Wolff Ollins, who set out the pretty simple rule that, where possible, the logo should go at the top middle. It’s simple, but it means that it can be followed. It works well across aspect ratios too, which is important for a broadcaster. This is definitely a route to go down - a branding system where from the outset the realities of deploying a brand across different formats and sizes has been considered.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p class="goal">Modern brands need to be aware of responsive principles when producing guidelines. Focussing too prescriptively on minutiae of sizing means rules will be misunderstood and ignored. Effective brand systems acknowledge that rules should be kept simple and everyone should understand the need for them - because otherwise it won’t be followed.</p>
+            </article>
+        </section>
+        <section class="dark" id="practical">
+            <aside></aside>
+            <article>
+                <h2><span class="number">05</span>Practical</h2>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p>The final strand is about practicality – measuring how successful a design is at doing its job. On the web, there’s a huge emphasis on testing. Analytics and UX are a huge business. But in the branding world, testing is often merely thought of in financial terms. There are plenty of examples of rebrands that backfired – think of when Royal Mail decided they were called Consignia for a year, but changed back when everyone still called them Royal Mail. Or the recent rebrand of the Portuguese government, abandoned when a new administration came to power. I suppose profitability will be what everything will come down to in the end, given branding is often in the service of making a profit – though there ought to be more recognition of the role of testing as a part of the design process itself. I asked Martin Lorenz about user testing, knowing he’s a technically minded identity designer. And he agreed, “the metrics are a little more intangible” when you’re doing branding rather than web. The feedback will be far more qualitative than quantitative.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside>
+                <blockquote>
+                    <p>
+                        “Why do we not routinely speak more often with and test our designs with the actual people who will use our designs? Usually graphic designers do not test their designs. Clients also rarely require or ask for user testing in design briefs. Furthermore, educational establishments providing ‘graphic design’ courses do not offer an introduction to testing”
+
+
+
+                    </p>
+                    <footer>Thomas Bohm <cite>in Heller, S. and Vienne, V. (eds.) (2018) Citizen designer : perspectives on design responsibility. Second edition. New York: Allworth Press.</cite></footer>
+
+                </blockquote>
+            </aside>
+            <article>
+                <p>Thomas Bohm asks why testing designs with those who will experience them isn’t a more common part of the design process – and I agree entirely. It’s commonplace in more technical environments, so why not in visual communication? If design is about using visuals to convey a message, there’s a simple test of how successful what you’ve made is – does it work effectively, or doesn’t it? And this is frustrating for me – someone who enjoys brand design but whose mind is much more technical.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="va.png" alt="Victoria and Albert museum map and banners" class="wide top">
+                <footer><cite>Banner designed by Alan Fletcher, Victoria and Albert Museum. Image: Creative Review
+                        and Map of the museum, by Pentagram. Image: V&A</cite></footer>
+            </aside>
+            <article>
+                <p>Now, the practicalities of brand design aren’t all to do with the relationships with users, but clients too. Johnson Banks, the branding and advertising agency, are very open and honest about the realities of how their designs get used. They do acknowledge how their work will eventually be replaced. Often quickly. In his book, their founder Michael Johnson gives plenty of examples of designers that had ideas which hit the buffers once practical considerations were factored in. Like the redesign by Alan Fletcher of the V&A, which looked to improve navigation through the building through a series of colour-coded banners which would match the colour of that wing on the printed map. And then the accountants stepped in and decided to downgrade the map to a two-colour print, and now the “beautiful series of banners [make] little navigational sense”.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="ibm.png" alt="IBM rebus logo" class="wide top">
+                <footer><cite>IBM rebus poster, by Paul Rand</cite></footer>
+            </aside>
+            <article>
+                <p>Or the alternative ‘eye bee m’ rebus logo designed by Paul Rand for IBM, intended to portray a lighter side to the company’s corporate identity. The bosses disagreed, believing that playing about with the logo would lead to the brand becoming diluted. It’s become an classic design, however, beloved of a particular type of designer who reveres utopian modernist simplicity.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="nasa1.png" alt="NASA brand manual" class="wide top">
+                <footer><cite>Graphic Standards Manual, National Aeronautics and Space Administration</cite></footer>
+            </aside>
+            <article>
+                <p>Designers love this sort of thing. Reprints of modernist style guides sell for hundreds of pounds as coffee table books. And I think that’s in part because they’re a curio, a relic. Nobody really does them like this anymore, and for good reason. Like in NASA’s 1970s manual – the set of typefaces with examples of every letter isn’t really needed these days when you can just send a file.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="nasa2.png" alt="NASA brand manual" class="wide top">
+                <footer><cite>Graphic Standards Manual, National Aeronautics and Space Administration</cite></footer>
+            </aside>
+            <article>
+                <p>That’s not to say that the level of craftsmanship evident in these sorts of manuals isn’t the sort of thing that designers should aspire towards. But it’s my belief that instead of aiming for exactness, like specifying the particular placement of a piece of text on a particular size of paper, designers would be better off putting effort into embodying the sorts of responsive principles I’ve outlined instead.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside><img src="nasa3.png" alt="NASA brand manual" class="wide top">
+                <footer><cite>Graphic Standards Manual, National Aeronautics and Space Administration</cite></footer>
+            </aside>
+            <article>
+                <p>These sorts of things are a product of the technical restrictions of their time anyway – the reason why a lot of these manuals feature the logo repeated at various sizes is because the people designing signage or printed materials would physically reproduce the logotype at 100% scale out of the book, which is obviously unnecessary nowadays.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p class="goal">We should continue in the same spirit as these designers – of exploring the possibilities within current technological boundaries – but those nowadays will involve far more code, much more use of percentages rather than millimetres, and designs that from the beginning consider the equitable, not identical, reproduction of designs across applications.</p>
+            </article>
+        </section>
+        <section class="light">
+            <aside></aside>
+            <article>
+                <p class="goal">Brand identities must strive to incorporate best practices in accessibility and usability, and acknowledge that, within an online world, the methodologies of web-based responsive design are the most practical ways forward.</p>
+            </article>
+        </section>
+        <section class="bright bibliography">
+            <article>
+                <h2>Bibliography</h2>
+                <p id="bibtext">@_doublearrow, 2023. Twitter / @_doublearrow. [Online] Available at: https://twitter.com/_doublearrow
+                    [Accessed 14 December 2023].
+                    <br><br>
+                    Andrew, R. & Simmons, J., 2017. The new CSS layout.
+                    s.l.:A Book Apart.
+                    <br><br>
+                    Balogun, P., 2023. What it’s like being a 24-hour IT team in Parliament. [Online] Available at: https://pds.blog.parliament.uk/2023/06/23/what-its-like-being-a-24-hour-it-team-in-parliament/ [Accessed 14 December 2023].
+                    <br><br>
+                    Berners-Lee, T., 1998. Principles of Design. [Online]
+                    Available at: https://www.w3.org/DesignIssues/Principles.html [Accessed 14 December 2023].
+                    <br><br>
+                    Bohm, T., 2018. Accessibility and Usability in Communication Design. In: S. Heller & V. Vienne, eds. Citizen designer: Perspectives on design responsibility.
+                    New York: Allworth Press, pp. 133-151.
+                    <br><br>
+                    British Rail / Design Research Unit, 1965. Corporate Identity Manual. [Online] Available at: http://www.doublearrow.co.uk/manual.htm [Accessed 14 December 2023].
+                    <br><br>
+                    Brook, T., Schrauwen, S. & Shaughnessy, A., 2014. Manuals 1: Design & Identity Guidelines. 1st ed. London: Unit 15.
+                    <br><br>
+                    D&AD, 2022. BBC Brand Refresh. [Online]
+                    Available at: https://www.dandad.org/awards/professional/2022/235751/bbc-brand-refresh/
+                    [Accessed 14 December 2023].
+                    <br><br>
+                    Dahl, E., 2019. Space, grids, and layouts. [Online]
+                    Available at: https://www.designsystems.com/space-grids-and-layouts/ [Accessed 14 December 2023].
+                    <br><br>
+                    For the People, 2022. NSW Government. [Online]
+                    Available at: https://www.forthepeople.agency/nsw-government [Accessed 14 December 2023].
+                    <br><br>
+                    Ford, R., 2019. Web design: The evolution of the digital world from 1990-today. 1sr ed. Koln: Taschen.
+                    Gardener, B. & Fishel, C., 2013. Logo creed : the mystery, magic and method behind designing logos. Beverly, MA: Rockport.
+                    <br><br>
+                    Garfield, S., 2011. In: Just My Type. London: Profile, p. 153.
+                    <br><br>
+                    Government Digital Service, 2022. Accessibility in Design Systems – keynote panel discussion. Online, Design Systems Day 2022.
+                    <br><br>
+                    Government Digital Service, 2023. GOV.UK Design System: what we’ve been up to and where we’re heading. Edinburgh, Design System Day 2023.
+                    <br><br>
+                    Grindrod, J., 2018. How to love brutalism. 1st ed. London: Batsford.
+                    <br><br>
+                    Heller, S., 2018. Citizen Designer. s.l.:s.n.
+                    <br><br>
+                    Hobbs, M., 2023. Bridging the Digital Divide using Web Performance. Amsterdam, Performance.now().
+                    <br><br>
+                    Hurrell, M., 2013. GOV.UK visual identity and brand. [Online] Available at: https://mhurrell.co.uk/work/govuk-identity-and-brand/ [Accessed 14 December 2023].
+                    <br><br>
+                    Hurrell, M., 2018. Accessible web design best practice poster. [Online] Available at: https://mhurrell.co.uk/work/accessible-web-design-best-practice-poster/
+                    [Accessed 14 December 2023].
+                    <br><br>
+                    imagine... The Factory: Made in Manchester. 2023. [Film] Directed by Catherine Abbott. Manchester: BBC imagine....
+                    <br><br>
+                    Johnson Banks, 2023. @johnson_banks_design on Instagram. [Online] Available at: https://www.instagram.com/p/cnctqlrlhrx/ [Accessed 14 December 2023].
+                    <br><br>
+                    Johnson, M., 2012. Problem Solved. 2nd ed. London: Phaidon.
+                    <br><br>
+                    Lawrence, D., 2016. British Rail Designed 1948-97. Hersham: Ian Allan.
+                    <br><br>
+                    Lorenz, M., 2021. Flexible Visual Systems. 1st ed. Karlsruhe, Germany: Slanted.
+                    <br><br>
+                    Lorenz, M., 2023. Guest lecture at Manchester School of Art [Interview] (4 October 2023).
+                    <br><br>
+                    Lorenz, M., 2023. Interview by Bradley Sansom & Harrison Leitch [Interview] (8 December 2023).
+                    <br><br>
+                    Manchester Metropolitan University, 2022. Brand Guidelines. [Online] Available at: https://www.mmu.ac.uk/brand/ [Accessed 14 December 2023].
+                    <br><br>
+                    Moving Brands, 2021. Cambridge University Press & Assessment Brand Transformation. [Online] Available at: https://movingbrands.com/work/cambridge-university/ [Accessed 14 December 2023].
+                    <br><br>
+                    Paul, T., 2023. Running the GOV.UK Design System. [Online] Available at: https://www.timpaul.co.uk/posts/running-the-govuk-design-system/ [Accessed 14 December 2023].
+                    <br><br>
+                    Richardson, A., 2016. Data-driven graphic design : creative coding for visual communication.. London: Fairchild Books.
+                    <br><br>
+                    Steane, J., 2014. The principles & processes of interactive design. London: Bloomsbury Academic.
+                    <br><br>
+                    The Beauty of Transport, 2022. In Search of Perfection: Plato’s Double Arrow (Rail Symbol 2, Nick Job for Network Rail, 2022). [Online] Available at: https://thebeautyoftransport.com/2022/12/14/rail-symbol-2/ [Accessed 14 December 2023].
+                    <br><br>
+                    Under Consideration LLC, 2018. New Logo and Identity for UK Parliament by SomeOne. [Online]
+                    Available at: https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_uk_parliament_by_someone.php
+                    [Accessed 14 December 2023]. (£)
+                    <br><br>
+
+
+                    Under Consideration LLC, 2022. New Identity for NSW Government by For The People. [Online] Available at: https://www.underconsideration.com/brandnew/archives/new_identity_for_nsw_government_by_for_the_people.php [Accessed 14 December 2023]. (£)
+                    <br><br>
+                    Under Consideration LLC, 2023. New Logo and Identity for Factory International by North and Peter Saville. [Online] Available at: https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_factory_international_by_north_and_peter_saville.php
+                    [Accessed 14 December 2023]. (£)
+                    <br><br>
+                    Under Consideration LLC, 2023. New Logo and Identity for Nordstrom Rack by Jones Knowles Ritchie. [Online] Available at: https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_nordstrom_rack_by_jones_knowles_ritchie.php
+                    [Accessed 14 December 2023]. (£)
+                    <br><br>
+                    Van Damme, B., 2021. Embrace the Platform. [Online]
+                    Available at: https://css-tricks.com/embrace-the-platform/ [Accessed 14 December 2023].
+                    <br><br>
+                    Van Loon, E., RIBA, OMA & F. I., 2023. Space for expression - Intersections in Architecture. Manchester: Factory International.
+                    <br><br>
+                    Verdin, M., 2002. Consignia: Nine letters that spelled fiasco. [Online] Available at: http://news.bbc.co.uk/1/hi/business/2002480.stm [Accessed 14 December 2023].
+                    <br><br>
+                    Voelker, U., 2020. Structuring design: graphic grids in theory and practice. 2nd ed. Salenstein: Niggli.
+                    <br><br>
+                    WebAIM, 2023. WebAIM Contrast Checker. [Online]
+                    Available at: https://webaim.org/resources/contrastchecker/?fcolor=FF9B37&bcolor=767676
+                    [Accessed 14 December 2023].
+                    <br><br>
+                    Yates, D. & Price, J., 2015. Communication design: Insights from the creative industries. London: Fairchild Books.
+                </p>
+            </article>
+
+        </section>
+
     </main>
 </body>
 
